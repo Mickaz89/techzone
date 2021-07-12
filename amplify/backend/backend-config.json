@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "backstagemickaael04894160": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

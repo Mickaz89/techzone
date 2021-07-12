@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-backstagemickaael-dev-152919-authRole",
+      "UnauthRoleArn": "arn:aws:iam::334463112746:role/amplify-backstagemickaael-dev-152919-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::334463112746:role/amplify-backstagemickaael-dev-152919-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-backstagemickaael-dev-152919-deployment",
+      "UnauthRoleName": "amplify-backstagemickaael-dev-152919-unauthRole",
+      "StackName": "amplify-backstagemickaael-dev-152919",
+      "StackId": "arn:aws:cloudformation:eu-west-1:334463112746:stack/amplify-backstagemickaael-dev-152919/ca6017e0-e30c-11eb-94c8-0665fd7359bf",
+      "AmplifyAppId": "dx0q6qx2ljkmm"
+    },
+    "categories": {
+      "auth": {
+        "backstagemickaael04894160": {}
+      }
+    }
+  }
+}
