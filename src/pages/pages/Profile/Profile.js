@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 
 
 import General from './General';
+import Developper from './Developper'
 
 import {
     AppBar,
@@ -35,7 +36,10 @@ import {
 const CustomAppBar = styled(AppBar)`
   background: ${props => props.theme.palette.background.default};
   color: ${props => props.theme.palette.primary.main};
-  padding: ${props => props.theme.spacing(2)}px;
+  padding-left: ${20}px;
+  padding-bottom:${20}px;
+  margin-top: ${0}px;
+  overflow: hidden;
 `;
 
 function TabPanel(props) {
@@ -78,6 +82,8 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+const GeneralLabel = () => <Typography variant="h6" gutterBottom>General</Typography>
+const DevelopperLabel = () => <Typography variant="h6" gutterBottom>Developper</Typography>
 export default function Profile() {
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
@@ -92,17 +98,14 @@ export default function Profile() {
 
         <div>
             <Helmet title="Profile" />
-            <Typography variant="h3" gutterBottom display="inline">
+            {/* <Typography variant="h3" gutterBottom display="inline">
                 Profile
-            </Typography>
-
-
-
-            <Divider my={6} />
+            </Typography> */}
+            {/* <Divider my={6} /> */}
             <CustomAppBar position="static">
                 <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-                    <Tab label="General" {...a11yProps(0)} />
-                    <Tab label="Item Two" {...a11yProps(1)} />
+                    <Tab label={GeneralLabel()} {...a11yProps(0)}/>
+                    <Tab label={DevelopperLabel()} {...a11yProps(1)} />
                     <Tab label="Item Three" {...a11yProps(2)} />
                 </Tabs>
             </CustomAppBar>
@@ -110,7 +113,7 @@ export default function Profile() {
                 <General />
             </TabPanel>
             <TabPanel value={value} index={1}>
-                Item Two
+                <Developper/>
             </TabPanel>
             <TabPanel value={value} index={2}>
                 Item Three

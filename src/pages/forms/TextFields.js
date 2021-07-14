@@ -212,4 +212,4 @@ function TextFields() {
   );
 }
 
-export default TextFields;
+export {TextFields, OutlinedTextFields};

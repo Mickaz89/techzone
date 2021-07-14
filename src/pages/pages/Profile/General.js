@@ -550,7 +550,7 @@ function General() {
         <Typography>Profile</Typography>
       </Breadcrumbs> */}
 
-      <Divider my={6} />
+      {/* <Divider my={6} /> */}
 
       <Grid container spacing={6}>
         <Grid item xs={12} lg={4} xl={3}>

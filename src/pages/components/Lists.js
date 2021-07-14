@@ -33,6 +33,8 @@ import {
   StarBorder as StarBorderIcon,
 } from "@material-ui/icons";
 
+import GitHubIcon from '@material-ui/icons/GitHub';
+
 import { spacing } from "@material-ui/system";
 
 const Card = styled(MuiCard)(spacing);
@@ -257,4 +259,4 @@ function Lists() {
   );
 }
 
-export default Lists;
+export {Lists, SimpleList};

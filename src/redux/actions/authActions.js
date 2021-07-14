@@ -94,8 +94,10 @@ export function signOut() {
 
 export function getSession() {
   return async (dispatch, getState) => {
-    
     console.log('get session before',  getState().authReducer)
+    dispatch({
+      type: types.AUTH_SESSION_LOADING
+    });
     return getSessionService()
       .then((response) => {
         console.log('good good ', response)

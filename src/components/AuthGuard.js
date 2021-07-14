@@ -11,13 +11,16 @@ function AuthGuard({ children }) {
   console.log('AUTH AUTH ' , auth);
 
 
-  if(auth.authenticated){
+
+  if(auth.loading){
     console.log('USER LOGGED IN')
-    return children;
-  }else{
+    return <h1>Loading</h1>;
+  }else if(auth.authenticated){
     console.log('USER LOGGED OUT')
-    return <Redirect to="/auth/sign-in" />;
+    return children;
   }
+
+  return <Redirect to="/auth/sign-in" />;
 
 }
 

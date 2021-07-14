@@ -408,7 +408,7 @@ const Sidebar = ({ classes, staticContext, location, ...rest }) => {
           </Grid>
           <Grid item>
             <NavLink to={"/profile"}>
-              <SidebarFooterText variant="body2">{auth.user && auth.user.email}</SidebarFooterText>
+              <SidebarFooterText variant="body2">{auth.attributes && auth.attributes.email}</SidebarFooterText>
               <SidebarFooterSubText variant="caption">
               Full Stack
               </SidebarFooterSubText>
